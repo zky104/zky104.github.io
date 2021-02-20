@@ -1,97 +1,165 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-<!-- 必要参数 -->
-<meta charset="utf-8"/>
-<title>Blog-ZKY104</title>
-<meta name="keywords" content="关键词"/>
-<meta name="description" content="简述"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- CSS -->
-<link rel="stylesheet" href="https://zky104.github.io/media/css/mdui.min.css">
-<link rel="stylesheet" href="https://zky104.github.io/media/css/modify.css">
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Zky104</title>
+
+<link rel="shortcut icon" href="https://zky104.github.io/favicon.ico?v=1613798809275">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zky104.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
 </head>
-<body id="index" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
-<header role="banner">
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
-        <div class="mdui-toolbar">
-            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
-            <a href="https://zky104.github.io" class="mdui-typo-headline">Blog-ZKY104</a>
-            <div class="mdui-toolbar-spacer"></div>
-            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Zky104
         </div>
     </div>
-</header>
-
-<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
-    <ul class="mdui-list">
-        <a href="/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
-        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
-        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
-        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
-        
-        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
-    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1613798809275" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
 </nav>
 
 
-<main class="mdui-m-a-2 mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3 mdui-row-xl-4 mdui-typo mdui-m-t-2">
-    
-    <section class="mdui-col mdui-m-b-2">
-        <div class="mdui-card">
-            
-            <div class="mdui-card-media">
-                <img src="https://zky104.github.io/post-images/hello-gridea.png" onerror="this.src='https://zky104.github.io/post-images/hello-gridea.png';">
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://zky104.github.io/post/hello-gridea/">
+                            <span class="post-title gt-c-content-color-first">Hello Gridea</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2018-12-12 ·
+                        </time>
+                        
+                            <a href="https://zky104.github.io/tag/4DkEgVUqf/" class="post-tag">
+                                # Gridea
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://zky104.github.io/post/hello-gridea/" class="post-feature-image"
+                       style="background-image: url('https://zky104.github.io/post-images/hello-gridea.png')">
+                    </a>
                 
             </div>
-            
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title"><a href="https://zky104.github.io/post/hello-gridea/">Hello Gridea</a></div>
-                <div class="mdui-card-primary-subtitle">2018-12-12</div>
-            </div>
-            <div class="mdui-card-content">👏  欢迎使用 Gridea ！
-✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
-
-Github
-Gridea 主页
-示例网站
-特性👇
-📝  你可以使用最酷的 Markdo...</div>
-        </div>
-    </section>
-
-</main>
-
-<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
-    
-    
-</nav>
-
-<div class="mdui-m-t-2 mdui-text-center mdui-typo">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+        
+    </div>
 </div>
 
-<script src="https://zky104.github.io/media/js/jquery.min.js"></script>
-<script src="https://zky104.github.io/media/js/mdui.min.js"></script>
-<script src="https://zky104.github.io/media/js/modify.js"></script>
-<script src="https://zky104.github.io/media/js/masonry.pkgd.min.js"></script>
-<script src="https://zky104.github.io/media/js/imagesloaded.pkgd.min.js"></script>
+        <div class="pagination-container">
+    
+    
+</div>
+
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Zky104的博客</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+            <div>
+       © Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="<%= themeConfig.domain %>/atom.xml" target="_blank">RSS</a></a>
+    </div>
+    </div>
+
+</div>
+
 <script>
-// 初始化-文章列表页面瀑布流。
-function masonry() {
-    // 初始化 masonry
-    $('.mdui-row-xs-1').masonry({
-        itemSelector: '.mdui-col',
-        horizontalOrder: true
-    });
-}
-masonry()
-$('.mdui-col').imagesLoaded( function() {
-    masonry()
-});
+  hljs.initHighlightingOnLoad()
 </script>
 
+    </div>
+</div>
 </body>
 </html>
