@@ -2,13 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zky104.github.io</id>
     <title>ZKY&apos;s Blog</title>
-    <updated>2021-04-18T04:21:28.111Z</updated>
+    <updated>2021-09-19T10:01:20.202Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zky104.github.io"/>
     <link rel="self" href="https://zky104.github.io/atom.xml"/>
     <logo>https://zky104.github.io/images/avatar.png</logo>
     <icon>https://zky104.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, ZKY&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[资源网站合集]]></title>
+        <id>https://zky104.github.io/post/sites/</id>
+        <link href="https://zky104.github.io/post/sites/">
+        </link>
+        <updated>2021-09-19T09:57:52.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="导航类">导航类</h2>
+<p>https://box.misiai.com/nav#/</p>
+<h2 id="网盘搜索">网盘搜索</h2>
+<p>https://ujuso.com/#/<br>
+https://www.sixyin.com/disk-search</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[影视、音乐资源站合集]]></title>
         <id>https://zky104.github.io/post/movie/</id>
